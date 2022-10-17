@@ -324,8 +324,9 @@ Local Group Memberships      *Remote Management Use
 Global Group memberships     *Domain Users
 
 Dado que tenemos las credenciales de este nuevo usuario, vamos a volver a utilizar la herramienta bloodhound sobre este usuario. Esto nos dumpea archivos en .json los cuales se pueden incorporar en el framework de bloodhound:
+
+``bloodhound-python -c all -u 'svc_loanmgr' -p 'Moneymakestheworldgoround!' -d EGOTISTICAL-BANK.LOCAL -ns 10.10.10.175``
 ```
-bloodhound-python -c all -u 'svc_loanmgr' -p 'Moneymakestheworldgoround!' -d EGOTISTICAL-BANK.LOCAL -ns 10.10.10.175
 root@kali:/home/juan/HTB/sauna/content# ls
 20211212215923_computers.json	20211212215923_groups.json  20211212220025_computers.json	20211212220025_groups.json  
 20211212215923_domains.json   	20211212215923_users.json   20211212220025_domains.json 	 20211212220025_users.json   
